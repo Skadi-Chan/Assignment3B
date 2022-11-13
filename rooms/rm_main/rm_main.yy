@@ -23,14 +23,14 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_335B4A57","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_335B4A57","path":"rooms/rm_main/rm_main.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
   "roomSettings": {
     "inheritRoomSettings": false,
-    "Width": 720,
-    "Height": 720,
+    "Width": 640,
+    "Height": 360,
     "persistent": false,
   },
   "viewSettings": {
@@ -51,7 +51,7 @@
     "path": "folders/Rooms.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Room1",
+  "name": "rm_main",
   "tags": [],
   "resourceType": "GMRoom",
 }
