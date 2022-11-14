@@ -31,7 +31,7 @@ if (timer == 0) {
 if (timer == 1 * room_speed){
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-1].goal_x = card_1_x
-		pile[|deal_num-1].goal_y = card_l1_y
+		pile[|deal_num-1].goal_y = card_up_y
 	
 	
 
@@ -42,7 +42,7 @@ if (timer == 1.2 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-2].goal_x = card_2_x
-		pile[|deal_num-2].goal_y = card_l1_y
+		pile[|deal_num-2].goal_y = card_up_y
 	
 }
 
@@ -51,7 +51,7 @@ if (timer == 1.4 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-3].goal_x = card_3_x
-		pile[|deal_num-3].goal_y = card_l1_y
+		pile[|deal_num-3].goal_y = card_up_y
 	
 }
 
@@ -60,7 +60,7 @@ if (timer == 1.6 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-4].goal_x = card_1_x
-		pile[|deal_num-4].goal_y = card_l2_y
+		pile[|deal_num-4].goal_y = card_down_y
 	
 }
 
@@ -69,7 +69,7 @@ if (timer == 1.8 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-5].goal_x = card_2_x
-		pile[|deal_num-5].goal_y = card_l2_y
+		pile[|deal_num-5].goal_y = card_down_y
 	
 }
 
@@ -78,7 +78,7 @@ if (timer == 2 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-6].goal_x = card_3_x
-		pile[|deal_num-6].goal_y = card_l2_y
+		pile[|deal_num-6].goal_y = card_down_y
 }
 
 //make the cards visible to the player
@@ -107,8 +107,8 @@ if (timer == 3.3 * room_speed) {
 	}
 	
 	audio_play_sound(snd_flipcard,0,false)
-	card_ai.goal_x = deal_x
-	card_ai.goal_y = deal_y
+	card_ai.goal_x = ai_deal_x
+	card_ai.goal_y = ai_deal_y
 	ai_choice = card_ai.card_type
 	
 }

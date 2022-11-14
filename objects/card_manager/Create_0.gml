@@ -17,15 +17,15 @@ card_random = ds_list_create()
 
 
 //location vars
-card_l1_y = 150
-card_l2_y = 666
+card_up_y = 150
+card_down_y = 666
 
 card_1_x = 250
 card_2_x = 360
 card_3_x = 470
 
-deal_x = 360
-deal_y = 325
+ai_deal_x = 360
+ai_deal_y = 325
 
 player_deal_x = 360
 player_deal_y = 480

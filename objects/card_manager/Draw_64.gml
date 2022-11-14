@@ -1,7 +1,7 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
-draw_set_font(score_font)
+draw_set_font(fnt_score)
 draw_text_transformed(14,10,string(ai_score),1,1,0)
 
 
