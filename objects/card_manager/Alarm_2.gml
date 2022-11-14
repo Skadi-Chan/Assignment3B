@@ -2,7 +2,7 @@
 // 你可以在此编辑器中写入代码 
 if (discard_count < amount) {
 	discarding_card = pile[|discard_count]
-	audio_play_sound(flipcard,0,false)
+	audio_play_sound(snd_flipcard,0,false)
 	discarding_card.goal_x = init_x
 	discarding_card.goal_y = init_y + 3 - card_interval * discard_count
 	discarding_card.shown = false

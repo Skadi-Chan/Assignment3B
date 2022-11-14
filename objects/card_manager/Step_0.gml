@@ -26,7 +26,7 @@ if (timer == 0) {
 }
 
 if (timer == 1 * room_speed){
-		audio_play_sound(flipcard,0,false)
+		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-1].goal_x = card_1_x
 		pile[|deal_num-1].goal_y = card_l1_y
 	
@@ -36,7 +36,7 @@ if (timer == 1 * room_speed){
 
 if (timer == 1.2 * room_speed){
 
-		audio_play_sound(flipcard,0,false)
+		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-2].goal_x = card_2_x
 		pile[|deal_num-2].goal_y = card_l1_y
 	
@@ -44,7 +44,7 @@ if (timer == 1.2 * room_speed){
 
 if (timer == 1.4 * room_speed){
 
-		audio_play_sound(flipcard,0,false)
+		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-3].goal_x = card_3_x
 		pile[|deal_num-3].goal_y = card_l1_y
 	
@@ -52,7 +52,7 @@ if (timer == 1.4 * room_speed){
 
 if (timer == 1.6 * room_speed){
 
-		audio_play_sound(flipcard,0,false)
+		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-4].goal_x = card_1_x
 		pile[|deal_num-4].goal_y = card_l2_y
 	
@@ -60,7 +60,7 @@ if (timer == 1.6 * room_speed){
 
 if (timer == 1.8 * room_speed){
 
-		audio_play_sound(flipcard,0,false)
+		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-5].goal_x = card_2_x
 		pile[|deal_num-5].goal_y = card_l2_y
 	
@@ -68,14 +68,14 @@ if (timer == 1.8 * room_speed){
 
 if (timer == 2 * room_speed){
 
-		audio_play_sound(flipcard,0,false)
+		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-6].goal_x = card_3_x
 		pile[|deal_num-6].goal_y = card_l2_y
 }
 
 if (timer == 3 * room_speed) {
 
-		audio_play_sound(flipcard,0,false)
+		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-4].shown = true
 		pile[|deal_num-4].dealing = true
 		pile[|deal_num-5].shown = true
@@ -96,7 +96,7 @@ if (timer == 3.3 * room_speed) {
 		card_ai = pile[|deal_num-3]
 	}
 	
-	audio_play_sound(flipcard,0,false)
+	audio_play_sound(snd_flipcard,0,false)
 	card_ai.goal_x = deal_x
 	card_ai.goal_y = deal_y
 	ai_choice = card_ai.card_type
@@ -111,7 +111,7 @@ if (timer > 3.3 * room_speed) {
 			card1.goal_x = player_deal_x
 			card1.goal_y = player_deal_y
 			
-			audio_play_sound(flipcard,0,false)
+			audio_play_sound(snd_flipcard,0,false)
 			pile[|deal_num-4].dealing = false
 			pile[|deal_num-5].dealing = false
 			pile[|deal_num-6].dealing = false
@@ -285,7 +285,7 @@ if (timer > 3.3 * room_speed) {
 			
 			
 			
-			audio_play_sound(flipcard,0,false)
+			audio_play_sound(snd_flipcard,0,false)
 			deal_num -= 1
 			pile[|deal_num].goal_x = discard_x
 			pile[|deal_num].goal_y = discard_y - (amount - deal_num) * card_interval
@@ -297,7 +297,7 @@ if (timer > 3.3 * room_speed) {
 		if (deal_timer == 3.2 * room_speed) {
 			show_debug_message(string(deal_num) + " status "+ string(instance_exists(pile[|deal_num])))
 			
-			audio_play_sound(flipcard,0,false)
+			audio_play_sound(snd_flipcard,0,false)
 			pile[|deal_num-1].goal_x = discard_x
 			pile[|deal_num-1].goal_y = discard_y - (amount - deal_num + 1) * card_interval
 			pile[|deal_num-1].depth = deal_num - 1
@@ -306,7 +306,7 @@ if (timer > 3.3 * room_speed) {
 		}
 		if (deal_timer == 3.4 * room_speed) {
 			deal_num -= 1
-			audio_play_sound(flipcard,0,false)
+			audio_play_sound(snd_flipcard,0,false)
 			pile[|deal_num].goal_x = discard_x
 			pile[|deal_num].goal_y = discard_y - (amount - deal_num) * card_interval
 			pile[|deal_num].depth = deal_num
@@ -315,7 +315,7 @@ if (timer > 3.3 * room_speed) {
 		}
 		if (deal_timer == 3.6 * room_speed) {
 			deal_num -= 1
-			audio_play_sound(flipcard,0,false)
+			audio_play_sound(snd_flipcard,0,false)
 			pile[|deal_num].goal_x = discard_x
 			pile[|deal_num].goal_y = discard_y - (amount - deal_num) * card_interval
 			pile[|deal_num].depth = deal_num
@@ -324,7 +324,7 @@ if (timer > 3.3 * room_speed) {
 		} 
 		if (deal_timer == 3.8 * room_speed) {
 			deal_num -= 1
-			audio_play_sound(flipcard,0,false)
+			audio_play_sound(snd_flipcard,0,false)
 			pile[|deal_num].goal_x = discard_x
 			pile[|deal_num].goal_y = discard_y - (amount - deal_num) * card_interval
 			pile[|deal_num].depth = deal_num
@@ -333,7 +333,7 @@ if (timer > 3.3 * room_speed) {
 		}
 		if (deal_timer == 4.0 * room_speed) {
 			deal_num -= 1
-			audio_play_sound(flipcard,0,false)
+			audio_play_sound(snd_flipcard,0,false)
 			pile[|deal_num].goal_x = discard_x
 			pile[|deal_num].goal_y = discard_y - (amount - deal_num) * card_interval
 			pile[|deal_num].depth = deal_num

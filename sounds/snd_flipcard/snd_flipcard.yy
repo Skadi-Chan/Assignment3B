@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "flipcard.mp3",
+  "soundFile": "snd_flipcard.mp3",
   "duration": 0.156735,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "flipcard",
+  "name": "snd_flipcard",
   "tags": [],
   "resourceType": "GMSound",
 }

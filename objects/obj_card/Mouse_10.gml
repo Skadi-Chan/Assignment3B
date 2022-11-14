@@ -4,8 +4,8 @@
 if (dealing=true) {
 	if (!mouse_colli) {
 		//old_goal_y = goal_y;
-		mouse_colli = true;
-		goal_y -= 20;
+		mouse_colli = true
+		goal_y -= 20
 	
 	}
 }

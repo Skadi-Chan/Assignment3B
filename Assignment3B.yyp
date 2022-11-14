@@ -36,7 +36,7 @@
     {"id":{"name":"spr_card_howler","path":"sprites/spr_card_howler/spr_card_howler.yy",},"order":7,},
     {"id":{"name":"card_back","path":"sprites/card_back/card_back.yy",},"order":0,},
     {"id":{"name":"spr_tencent","path":"sprites/spr_tencent/spr_tencent.yy",},"order":20,},
-    {"id":{"name":"flipcard","path":"sounds/flipcard/flipcard.yy",},"order":0,},
+    {"id":{"name":"snd_flipcard","path":"sounds/snd_flipcard/snd_flipcard.yy",},"order":0,},
     {"id":{"name":"spr_ubisoft","path":"sprites/spr_ubisoft/spr_ubisoft.yy",},"order":18,},
     {"id":{"name":"scr_assign_stats","path":"scripts/scr_assign_stats/scr_assign_stats.yy",},"order":2,},
     {"id":{"name":"obj_card","path":"objects/obj_card/obj_card.yy",},"order":0,},

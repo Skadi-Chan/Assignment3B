@@ -25,7 +25,7 @@ for (i=0;i<amount;i++) {
 	var card = instance_create_layer(init_x,init_y,"Cards",obj_card)
 	card.goal_y = init_y - card_interval*i
 	card.depth = -i
-	audio_play_sound(flipcard,0,false)
+	audio_play_sound(snd_flipcard,0,false)
 	card.card_type = card_random[|i]
 	ds_list_add(pile,card);
 }
