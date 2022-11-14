@@ -133,7 +133,7 @@
     "path": "folders/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "score_font",
+  "name": "fnt_score",
   "tags": [],
   "resourceType": "GMFont",
 }
