@@ -1,6 +1,7 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
+//creating the card pile and ready to deal
 if (!restarting) {
 if (timer == 0) {
 	if (deal_num == 0) {
@@ -25,6 +26,8 @@ if (timer == 0) {
 
 }
 
+//deal the card for the Ai first
+//first ai card
 if (timer == 1 * room_speed){
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-1].goal_x = card_1_x
@@ -34,6 +37,7 @@ if (timer == 1 * room_speed){
 
 }
 
+//second ai card
 if (timer == 1.2 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
@@ -42,6 +46,7 @@ if (timer == 1.2 * room_speed){
 	
 }
 
+//third ai card
 if (timer == 1.4 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
@@ -50,6 +55,7 @@ if (timer == 1.4 * room_speed){
 	
 }
 
+//first player card
 if (timer == 1.6 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
@@ -58,6 +64,7 @@ if (timer == 1.6 * room_speed){
 	
 }
 
+//second player card
 if (timer == 1.8 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
@@ -66,6 +73,7 @@ if (timer == 1.8 * room_speed){
 	
 }
 
+//third player card
 if (timer == 2 * room_speed){
 
 		audio_play_sound(snd_flipcard,0,false)
@@ -73,6 +81,7 @@ if (timer == 2 * room_speed){
 		pile[|deal_num-6].goal_y = card_l2_y
 }
 
+//make the cards visible to the player
 if (timer == 3 * room_speed) {
 
 		audio_play_sound(snd_flipcard,0,false)
@@ -84,6 +93,7 @@ if (timer == 3 * room_speed) {
 		pile[|deal_num-6].dealing = true
 }
 
+//check ai card and place one ai card to the center
 if (timer == 3.3 * room_speed) {
 	ai_deal = irandom_range(0,2)
 	if (ai_deal == 0) {
@@ -103,6 +113,7 @@ if (timer == 3.3 * room_speed) {
 	
 }
 
+//get the card player chose and ready for compare
 if (timer > 3.3 * room_speed) {
 	if (mouse_check_button_pressed(mb_left)) {
 		card_click = instance_position(mouse_x,mouse_y,obj_card)
@@ -119,12 +130,14 @@ if (timer > 3.3 * room_speed) {
 			dealed = true
 		}
 	}
-	
+	//compare the cards with ai
 	if (dealed && timer > 3.3 * room_speed) {
 		if (deal_timer == 1 * room_speed) {
 			
 			card_ai.shown = true
 		}
+		
+		//when ai choose Rockstar card
 		if (deal_timer == 2 * room_speed) {
 			if (ai_choice == 0) {
 				// 0 -scissor, 1 -paper, 2 -rock
@@ -155,7 +168,8 @@ if (timer > 3.3 * room_speed) {
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
 				}
-			} else if (ai_choice == 1) {
+				
+			} else if (ai_choice == 1) {//when ai choose Riot games
 				if (player_choice == 0) {
 					audio_play_sound(snd_rdr2,0,false)
 					player_score ++
@@ -184,7 +198,7 @@ if (timer > 3.3 * room_speed) {
 					// ai win 
 				}
 				
-			} else if (ai_choice == 2) {
+			} else if (ai_choice == 2) {//when ai choose ubisoft
 				if (player_choice == 0) {
 					player_score++
 					audio_play_sound(snd_rdr2,0,false)
@@ -213,7 +227,7 @@ if (timer > 3.3 * room_speed) {
 					// ai win 
 				}
 				
-			}else if (ai_choice == 3) {
+			}else if (ai_choice == 3) {//when ai choose EA
 				if (player_choice == 0) {
 					player_score++
 					audio_play_sound(snd_rdr2,0,false)
@@ -242,7 +256,7 @@ if (timer > 3.3 * room_speed) {
 					// ai win 
 				}
 				
-			}else if (ai_choice == 4) {
+			}else if (ai_choice == 4) {//when ai choose tencent game
 				if (player_choice == 0) {
 					player_score++
 					audio_play_sound(snd_rdr2,0,false)
@@ -271,6 +285,8 @@ if (timer > 3.3 * room_speed) {
 				}
 			}
 		}
+		//compartion finished and ready to discard
+		//discard from ai to player
 		if (deal_timer == 3 * room_speed) {
 
 			
@@ -350,7 +366,7 @@ if (timer > 3.3 * room_speed) {
 }
 
 
-
+//reset the vars to loop the whole process
 if (timer < duration * room_speed) {
 	timer ++
 } else {
