@@ -1,8 +1,8 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
-amount = 24;
-type = 3;
+amount = 30
+type = 5;
 
 init_x = 100;
 init_y = 380;
@@ -49,3 +49,27 @@ discard_count = 0;
 shuffle_count = 0;
 
 restarting = false;
+
+
+
+particle_system = part_system_create()
+
+explosion_particle_type = part_type_create()
+
+part_type_shape(explosion_particle_type,pt_shape_spark)
+part_type_sprite(explosion_particle_type, spr_love,true,true,true)
+
+part_type_size(explosion_particle_type, 0.5, 1, 0,0)
+
+part_type_speed(explosion_particle_type, 0.4,3, 0, 0)
+
+part_type_direction(explosion_particle_type, 0, 359, 0,20)
+
+part_type_life(explosion_particle_type, 30,60)
+
+ai_effect_x = 340
+ai_effect_y = 210
+
+player_effect_x = 340
+player_effect_y = 400
+

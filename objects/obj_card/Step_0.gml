@@ -3,11 +3,15 @@
 
 if (shown) {
 	if (card_type == 0) {
-		sprite_index = card_scissor;
+		sprite_index = spr_rockstar
 	} else if (card_type == 1) {
-		sprite_index = card_paper;
+		sprite_index = spr_riot
 	} else if (card_type == 2) {
-		sprite_index = card_stone;
+		sprite_index = spr_ubisoft
+	}else if (card_type == 3) {
+		sprite_index = spr_ea
+	}else if (card_type == 4) {
+		sprite_index = spr_tencent
 	}
 } else {
 	sprite_index = card_back;
