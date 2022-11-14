@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "success.mp3",
+  "soundFile": "snd_success.mp3",
   "duration": 1.724082,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "success",
+  "name": "snd_success",
   "tags": [],
   "resourceType": "GMSound",
 }

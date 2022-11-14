@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "lose.mp3",
+  "soundFile": "snd_lose.mp3",
   "duration": 1.306122,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "lose",
+  "name": "snd_lose",
   "tags": [],
   "resourceType": "GMSound",
 }
