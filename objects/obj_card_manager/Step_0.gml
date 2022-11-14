@@ -22,8 +22,6 @@ if (timer == 0) {
 	
 	}
 
-
-
 }
 
 //deal the card for the Ai first
@@ -32,7 +30,6 @@ if (timer == 1 * room_speed){
 		audio_play_sound(snd_flipcard,0,false)
 		pile[|deal_num-1].goal_x = card_1_x
 		pile[|deal_num-1].goal_y = card_up_y
-	
 	
 
 }

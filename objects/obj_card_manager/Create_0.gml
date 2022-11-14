@@ -5,8 +5,6 @@
 amount = 30
 type = 5;
 
-init_x = 100
-init_y = 380
 
 pile = ds_list_create()
 deal_num = 0
@@ -17,6 +15,9 @@ card_random = ds_list_create()
 
 
 //location vars
+init_x = 100
+init_y = 380
+
 card_up_y = 150
 card_down_y = 666
 
