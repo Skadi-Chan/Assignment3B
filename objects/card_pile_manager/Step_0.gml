@@ -134,32 +134,32 @@ if (timer > 3.3 * room_speed) {
 					// same
 				} else if (player_choice == 1) {
 					ai_score ++;
-					audio_play_sound(lose,0,false);
+					audio_play_sound(snd_rdr2,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win
 				} else if (player_choice == 2) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_rdr2,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
 				} else if (player_choice == 3) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_rdr2,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
 				} else if (player_choice == 4) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_rdr2,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
 				}
 			} else if (ai_choice == 1) {
 				if (player_choice == 0) {
-					audio_play_sound(success,0,false);
+					audio_play_sound(snd_rdr2,0,false)
 					player_score ++;
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
@@ -170,17 +170,17 @@ if (timer > 3.3 * room_speed) {
 					ai_score ++;
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y, explosion_particle_type,50)
-					audio_play_sound(lose,0,false);
+					audio_play_sound(snd_lol,0,false)
 					// ai win
 				} else if (player_choice == 3) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_lol,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
 				} else if (player_choice == 4) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_lol,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
@@ -189,12 +189,12 @@ if (timer > 3.3 * room_speed) {
 			} else if (ai_choice == 2) {
 				if (player_choice == 0) {
 					player_score++
-					audio_play_sound(success,0,false)
+					audio_play_sound(snd_rdr2,0,false)
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 					// player win
 				} else if (player_choice == 1) {
-					audio_play_sound(success,0,false);
+					audio_play_sound(snd_lol,0,false)
 					player_score ++;
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
@@ -203,13 +203,13 @@ if (timer > 3.3 * room_speed) {
 					//  same
 				} else if (player_choice == 3) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_rainbow6,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
 				} else if (player_choice == 4) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_rainbow6,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
@@ -218,19 +218,19 @@ if (timer > 3.3 * room_speed) {
 			}else if (ai_choice == 3) {
 				if (player_choice == 0) {
 					player_score++
-					audio_play_sound(success,0,false)
+					audio_play_sound(snd_rdr2,0,false)
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 					// player win
 				} else if (player_choice == 1) {
-					audio_play_sound(success,0,false);
+					audio_play_sound(snd_lol,0,false)
 					player_score ++;
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 					// player win
 				} else if (player_choice == 2) {
 					player_score++
-					audio_play_sound(success,0,false)
+					audio_play_sound(snd_rainbow6,0,false)
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 					// player win
@@ -238,7 +238,7 @@ if (timer > 3.3 * room_speed) {
 					//same
 				} else if (player_choice == 4) {
 					ai_score++;
-					audio_play_sound(lose,0,false)
+					audio_play_sound(snd_apex,0,false)
 					
 					part_particles_create(particle_system,ai_effect_x,ai_effect_y,explosion_particle_type,50)
 					// ai win 
@@ -247,25 +247,25 @@ if (timer > 3.3 * room_speed) {
 			}else if (ai_choice == 4) {
 				if (player_choice == 0) {
 					player_score++
-					audio_play_sound(success,0,false)
+					audio_play_sound(snd_rdr2,0,false)
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 					// player win
 				} else if (player_choice == 1) {
-					audio_play_sound(success,0,false);
+					audio_play_sound(snd_lol,0,false)
 					player_score ++;
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 					// player win
 				} else if (player_choice == 2) {
 					player_score++
-					audio_play_sound(success,0,false)
+					audio_play_sound(snd_rainbow6,0,false)
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 					// player win
 				} else if (player_choice == 3) {
 					player_score++
-					audio_play_sound(success,0,false)
+					audio_play_sound(snd_apex,0,false)
 					
 					part_particles_create(particle_system,player_effect_x,player_effect_y, explosion_particle_type,50)
 				} else if (player_choice == 4) {
