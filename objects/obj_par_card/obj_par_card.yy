@@ -25,7 +25,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "par_card",
+  "name": "obj_par_card",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -5,8 +5,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "par_card",
-    "path": "objects/par_card/par_card.yy",
+    "name": "obj_par_card",
+    "path": "objects/obj_par_card/obj_par_card.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

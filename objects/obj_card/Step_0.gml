@@ -14,7 +14,7 @@ if (shown=true) {
 		sprite_index = spr_tencent
 	}
 } else {
-	sprite_index = card_back
+	sprite_index = spr_card_back
 }
 
 

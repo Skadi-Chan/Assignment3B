@@ -32,7 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "card_manager",
+  "name": "obj_card_manager",
   "tags": [],
   "resourceType": "GMObject",
 }

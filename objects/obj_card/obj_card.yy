@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "card_back",
-    "path": "sprites/card_back/card_back.yy",
+    "name": "spr_card_back",
+    "path": "sprites/spr_card_back/spr_card_back.yy",
   },
   "solid": false,
   "visible": true,
